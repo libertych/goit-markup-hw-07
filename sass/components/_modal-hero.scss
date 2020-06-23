@@ -1,0 +1,269 @@
+.modal-close {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+    /* transform: translate(50%, -50%); */
+    border: none;
+    border-radius: 50%;
+    border-color: $primary-background-color;
+    background-color: $primary-background-color;
+    outline: none;
+    /* background-image: url('../images/close.svg'); */
+    background-size: 11px 11px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12); */
+    cursor: pointer;
+    }
+     .modal-close:hover {
+       fill: $accent-color;
+       border: blue;
+     }
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form {
+    display: block;
+    position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  width: 528px;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+  background-color: $primary-background-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .backdrop {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    /* position: relative;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  width: 528px;
+  background-color: var(--primary-background-color);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  } */
+  .button-close {
+    position: absolute;
+  top: -2%;
+  right: -2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: $primary-background-color;
+  fill: #000000;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .form-field {
+    /* width: 448px;
+  height: 40px; */
+    display: block;
+  position: relative;
+  margin-bottom: 28px;
+  }
+  .form-input {
+    width: 100%;
+    padding: 12px 18px 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  .form-input:focus-within + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label {
+    transform: translate(-26px,-36px);
+    color: $accent-color;
+  }
+  .form-input:focus {
+    outline:none;
+    border: 1px solid $accent-color;
+  }
+  .form-input:focus,
+  .form-field:focus-within .modal-icon {
+    color: $accent-color;
+    
+  }
+  
+  
+  .form-label.comment {
+    top: 12px;
+    left: 16px;
+  }
+  
+  .form-field.comment {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form-textarea {
+    width: 100%;
+    resize: none;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    }
+  .form-textarea:focus {
+    outline:none;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+  }
+  .form-textarea:focus + .form-label,
+  .form-textarea:not(:placeholder-shown) + .form-label {
+    transform: translateY(-28px);
+    color: $accent-color;
+  }
+  .form-field.checkbox {
+    margin-bottom: 30px;
+  }
+  
+  .checkbox-icon  {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-left: 12px;
+    margin-right: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    right: -19px;
+    
+  }
+  .checkbox {
+    position: relative;
+  }
+  .form-checkbox {
+    width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  
+  }
+  .form-checkbox:checked + .checkbox-icon {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url('../images/sprite2.svg#icon-Vector-13');
+    background-size: contain;
+    background-origin: border-box;
+  }
+  .contract-link {
+    color: $accent-color;
+  }
+  .modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--title-text-color);
+    fill: currentColor;
+  }
+  .form-label {
+    position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $primary-text-color;
+  }
+  .check-form-label {
+    
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $primary-text-color;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+  .form-title {
+    margin-bottom: 30px;
+    font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  color: #212121;
+  }
+  .submit-button {
+    margin-right: auto;
+  margin-left: auto;
+    width: 200px;
+  height: 50px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  
+  color: #FFFFFF;
+  }

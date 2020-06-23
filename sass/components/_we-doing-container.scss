@@ -1,0 +1,54 @@
+.we-doing > .container {
+    border-top: 1px solid #ececec;
+    padding-top: 94px;
+  }
+  /* .we-doing-title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--title-text-color);
+  } */
+  .we-doing {
+    padding-bottom: 94px;
+  }
+  .we-doing-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .we-doing-list a {
+    text-decoration: none;
+  }
+  .we-doing-item {
+    position: relative;
+    padding-right: 0;
+    width: 370px;
+  }
+  .we-doing-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .production-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 27px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    border-radius: 0px;
+    color: $primary-background-color;
+  }
+  .we-doing-link {
+    background-image: url(../images/laptop-optim.jpg);
+  }

@@ -1,0 +1,48 @@
+.form-imput {
+    width: 356px;
+  height: 50px;
+  margin-right: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #2F303A;
+  }
+  .form-button {
+    /* display: inline-flex; */
+    background-size: contain;
+    padding: 0;
+    height: 50px;
+    width: 200px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  /* background: #2196F3; */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    color: #FFFFFF;
+    background-color: $accent-color;
+  }
+  .form-button::after {
+    width: 24px;
+    height: 24px;
+    content: '';
+    padding-left: 10px;
+    padding-right: 28px;
+    background-image: url(../images/icon-send.svg);
+    background-repeat: no-repeat;
+  }

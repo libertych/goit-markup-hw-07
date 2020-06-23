@@ -1,0 +1,20 @@
+body {
+    background-color: $primary-background-color;
+    color: $primary-text-color;
+    font-family: Roboto, sans-serif;
+    
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+  }
+  ul {
+    list-style: none;
+  }
